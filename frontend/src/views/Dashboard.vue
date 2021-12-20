@@ -369,10 +369,6 @@ export default class Dashboard extends Vue {
     let owner = null
     let repo = null
     let extension = false
-    if (url.includes("https://")){
-      url = url.substr(8)
-      console.log(url)
-    }
 
     if (first == last) { //normal github
       domain = url.substring(0, first)

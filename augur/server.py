@@ -50,7 +50,7 @@ class Server(object):
         self.cache = self.augur_app.cache.get_cache('server', expire=expire)
         self.cache.clear()
 
-        app.config['WTF_CSRF_ENABLED'] = False
+        app.config['WTF_CSRF_ENABLED'] = True  
 
         self.show_metadata = False
 
